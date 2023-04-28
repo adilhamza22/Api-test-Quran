@@ -1,14 +1,15 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    commonjs:true,
   },
   extends: 'standard',
   overrides: [
   ],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'script'
   },
   
   plugins: [
@@ -29,6 +30,7 @@ module.exports = {
     "jasmine": true
   },
   globals: {
+    require: true
   },
   
 }
